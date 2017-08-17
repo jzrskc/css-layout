@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<header id="header">
+  <img src="images/my_rocket.png" alt="rocket" style="margin: 0px 0px 0px -35%;">
+</header>
+
+<div class="hero">
+  <h1 class="hero-title">CSS Grid</h1>
+  <p class="hero-subtitle">Defeated quaint tomatoes</p>
+</div>
+
+<a class="fix-me button scroll top" href="#header">⬆️</a>
+<a class="fix-me button scroll bottom" href="#footer">⬇️</a>
+
+<main>
+  <h1>From the blog</h1>
+  <div class="card">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/gridarea-card-img-01.jpg" alt="" class="card-img">
+    <h2 class="card-title">Blog post title</h2>
+    <div class="card-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+      <a href="">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/gridarea-card-img-01.jpg" alt="" class="card-img">
+    <h2 class="card-title">Blog post title</h2>
+    <div class="card-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+      <a href="">Read more</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/gridarea-card-img-01.jpg" alt="" class="card-img">
+    <h2 class="card-title">Blog post title</h2>
+    <div class="card-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+      <a href="">Read more</a>
+    </div>
+  </div>
+</main>
+
+<aside>
+  <h1>Sidebar stuff</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat. In tempor pharetra felis at fermentum. Maecenas iaculis neque orci, sit amet sodales quam venenatis sit amet. Praesent eu enim nec velit bibendum accumsan a sed tellus. Aenean sed justo a tortor hendrerit imperdiet efficitur nec risus. Morbi gravida mi quis ultrices elementum. Pellentesque fermentum sodales sagittis. Sed vel efficitur nisl. Ut congue sodales sapien. Duis ultricies felis nunc, eu semper est tincidunt eu. Curabitur faucibus luctus eros, eget semper mauris dictum vel.</p>
+</aside>
+
+<footer id="footer">
+  <h1 class="footer-title">the end</h1>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var scrollLink = $('.scroll');
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000 );
+  });
+})
+</script>
+
+  </body>
+</html>
