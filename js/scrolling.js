@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var scrollLink = $('.fix-me');
+  var scrollLink = $('.dot-link');
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({

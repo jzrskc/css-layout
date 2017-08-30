@@ -117,30 +117,6 @@ Card Grid area
 }
 
 /*
-Smooth Buttons
-*/
-.fix-me.top{
-	position:fixed;
-	top:30%;
-}
-.fix-me.bottom{
-	position:fixed;
-	top:35.5%;
-}
-.button{
-	background-color:#252525;
-  text-decoration: none;
-  font-size: 2rem;
-	color:#e9d20f;
-	padding:0px 5px;
-	border:none;
-}
-.button:hover{
-	background:red;
-	color:#fff;
-}
-
-/*
 Header animation
 */
 #header {
@@ -155,4 +131,70 @@ Header animation
 @keyframes animate-background {
 	from { background-position: 110% 10px, 0px 0px }
 	to { background-position: -20% 10px, -1000px 0px }
+}
+
+/*
+Navigation Dots
+*/
+nav {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 100;
+}
+
+nav a {
+  display: block;
+  line-height: 25px;
+  position: relative;
+  padding-right: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover .nav-label {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .nav-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: #252525;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+nav .nav-label {
+  display: block;
+  opacity: 0.5;
+  visibility: hidden;
+  -webkit-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  transform: translateX(-10px);
+  -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+  transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  width: auto;
+  list-style: none;
 }
