@@ -147,7 +147,7 @@ Header animation
 	width: 100%;
 	margin: 0px auto;
 	background-color: #000;
-	background-image: url("images/planet.png"), url("images/star1.jpeg");
+	background-image: url("../images/planet.png"), url("../images/star1.jpeg");
 	background-position: 110% 10px, 0px 0px;
 	background-repeat: no-repeat, repeat-x;
 	animation: animate-background linear 50s infinite;
